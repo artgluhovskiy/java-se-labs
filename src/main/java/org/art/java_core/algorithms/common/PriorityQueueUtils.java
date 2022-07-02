@@ -1,8 +1,8 @@
-package org.art.java_core.algorithms.data_structures.utils;
+package org.art.java_core.algorithms.common;
 
 import java.util.Arrays;
 
-import static org.art.java_core.algorithms.data_structures.utils.HeapArrayUtils.buildMaxHeap;
+import static org.art.java_core.algorithms.common.HeapArrayUtils.buildMaxHeap;
 
 /**
  * Util methods for 'Priority Queue' data structure.

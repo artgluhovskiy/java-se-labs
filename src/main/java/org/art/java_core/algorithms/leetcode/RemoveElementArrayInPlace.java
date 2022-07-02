@@ -1,6 +1,6 @@
 package org.art.java_core.algorithms.leetcode;
 
-import org.art.java_core.algorithms.leetcode.utils.ArraysUtils;
+import org.art.java_core.algorithms.common.AssertionUtils;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -40,7 +40,7 @@ public class RemoveElementArrayInPlace {
         int[] beginsWith = {2, 2};
         int result = removeElement(nums, val);
         assertEquals(2, result);
-        assertTrue(ArraysUtils.arrayBeginsPrecisely(nums, beginsWith));
+        assertTrue(AssertionUtils.assertArrayBeginsPrecisely(nums, beginsWith));
     }
 
     @Test
@@ -50,6 +50,6 @@ public class RemoveElementArrayInPlace {
         int[] beginsWith = {0, 1, 3, 0, 4};
         int result = removeElement(nums, val);
         assertEquals(5, result);
-        assertTrue(ArraysUtils.arrayBeginsPrecisely(nums, beginsWith));
+        assertTrue(AssertionUtils.assertArrayBeginsPrecisely(nums, beginsWith));
     }
 }

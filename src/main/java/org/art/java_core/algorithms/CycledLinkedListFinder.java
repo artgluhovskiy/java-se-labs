@@ -1,6 +1,6 @@
 package org.art.java_core.algorithms;
 
-import org.art.java_core.algorithms.data_structures.ListNode;
+import org.art.java_core.algorithms.common.ListNode;
 
 /**
  * The algorithm implementation, which checks
@@ -34,7 +34,7 @@ public class CycledLinkedListFinder {
     }
 
     static String toString(ListNode tail) {
-        return tail == null ? " * " : tail.value + " -> " + toString(tail.next);
+        return tail == null ? " * " : tail.val + " -> " + toString(tail.next);
     }
 
     public static void main(String[] args) {

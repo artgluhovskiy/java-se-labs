@@ -1,4 +1,4 @@
-package org.art.java_core.algorithms.data_structures;
+package org.art.java_core.algorithms.common;
 
 /**
  * Binary Tree node implementation.

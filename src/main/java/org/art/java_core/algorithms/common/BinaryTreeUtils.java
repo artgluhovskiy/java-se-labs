@@ -1,6 +1,4 @@
-package org.art.java_core.algorithms.data_structures.utils;
-
-import org.art.java_core.algorithms.data_structures.TreeNode;
+package org.art.java_core.algorithms.common;
 
 import java.util.ArrayList;
 import java.util.List;

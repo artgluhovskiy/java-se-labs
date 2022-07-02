@@ -1,15 +1,21 @@
-package org.art.java_core.algorithms.leetcode;
+package org.art.java_core.algorithms.common;
 
 /**
- * Helper class for Leetcode coding problems related to Single Linked Lists.
+ * Helper class for coding problems related to Singly Linked Lists.
  */
 public class ListNode {
 
-    int val;
-    ListNode next;
+    public int val;
 
-    ListNode(int x) {
-        val = x;
+    public ListNode next;
+
+    public ListNode(int x) {
+        this.val = x;
+    }
+
+    public ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
     }
 
     public static ListNode of(int... values) {
@@ -23,6 +29,26 @@ public class ListNode {
             list = list.next;
         }
         return resList;
+    }
+
+    public static ListNode getKthElement(int k, ListNode list) {
+        if (list == null) {
+            throw new IllegalArgumentException("list cannot be null");
+        }
+        if (k == 0) {
+            throw new IllegalArgumentException("k cannot be zero");
+        }
+        if (k == 1) {
+            return list;
+        }
+        ListNode result = list;
+        for (int i = 0; i < k - 1; i++) {
+            if (result.next == null) {
+                throw new IllegalStateException("Cannot get the k-th element of the list. The list size is not enough");
+            }
+            result = result.next;
+        }
+        return result;
     }
 
     @Override

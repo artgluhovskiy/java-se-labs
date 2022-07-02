@@ -1,6 +1,6 @@
 package org.art.java_core.algorithms.sorting;
 
-import org.art.java_core.algorithms.data_structures.utils.HeapArrayUtils;
+import org.art.java_core.algorithms.common.HeapArrayUtils;
 
 import java.util.Arrays;
 

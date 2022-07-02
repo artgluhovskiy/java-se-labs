@@ -1,4 +1,4 @@
-package org.art.java_core.algorithms.data_structures.utils;
+package org.art.java_core.algorithms.common;
 
 import java.util.Arrays;
 

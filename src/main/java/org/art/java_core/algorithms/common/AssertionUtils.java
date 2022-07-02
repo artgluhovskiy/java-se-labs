@@ -1,11 +1,11 @@
-package org.art.java_core.algorithms.leetcode.utils;
+package org.art.java_core.algorithms.common;
 
-public class ArraysUtils {
+import lombok.experimental.UtilityClass;
 
-    private ArraysUtils() {
-    }
+@UtilityClass
+public class AssertionUtils {
 
-    public static boolean arrayBeginsPrecisely(int[] srcArray, int[] beginsWith) {
+    public static boolean assertArrayBeginsPrecisely(int[] srcArray, int[] beginsWith) {
         if (srcArray == null || beginsWith == null) {
             return false;
         }

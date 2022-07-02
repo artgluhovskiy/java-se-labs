@@ -1,4 +1,4 @@
-package org.art.java_core.algorithms.leetcode.utils;
+package org.art.java_core.algorithms.common;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
