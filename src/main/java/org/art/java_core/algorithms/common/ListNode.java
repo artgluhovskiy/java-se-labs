@@ -1,37 +1,37 @@
 package org.art.java_core.algorithms.common;
 
 /**
- * Helper class for coding problems related to Singly Linked Lists.
+ * Helper class for coding problems related to the Singly Linked Lists.
  */
-public class ListNode {
+public class ListNode<T> {
 
-    public int val;
+    public T val;
 
-    public ListNode next;
+    public ListNode<T> next;
 
-    public ListNode(int x) {
+    public ListNode(T x) {
         this.val = x;
     }
 
-    public ListNode(int val, ListNode next) {
+    public ListNode(T val, ListNode<T> next) {
         this.val = val;
         this.next = next;
     }
 
-    public static ListNode of(int... values) {
+    public static <T> ListNode<T> of(T... values) {
         if (values == null || values.length == 0) {
             return null;
         }
-        ListNode list = new ListNode(values[0]);
-        ListNode resList = list;
+        ListNode<T> list = new ListNode<>(values[0]);
+        ListNode<T> resList = list;
         for (int i = 1; i < values.length; i++) {
-            list.next = new ListNode(values[i]);
+            list.next = new ListNode<>(values[i]);
             list = list.next;
         }
         return resList;
     }
 
-    public static ListNode getKthElement(int k, ListNode list) {
+    public static <T> ListNode<T> getKthElement(int k, ListNode<T> list) {
         if (list == null) {
             throw new IllegalArgumentException("list cannot be null");
         }
@@ -41,7 +41,7 @@ public class ListNode {
         if (k == 1) {
             return list;
         }
-        ListNode result = list;
+        ListNode<T> result = list;
         for (int i = 0; i < k - 1; i++) {
             if (result.next == null) {
                 throw new IllegalStateException("Cannot get the k-th element of the list. The list size is not enough");
@@ -54,7 +54,7 @@ public class ListNode {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        ListNode node = this;
+        ListNode<T> node = this;
         sb.append(node.val);
         while (node.next != null) {
             node = node.next;
@@ -72,8 +72,8 @@ public class ListNode {
         if (!(that instanceof ListNode)) {
             return false;
         }
-        ListNode ptr1 = this;
-        ListNode ptr2 = (ListNode) that;
+        ListNode<T> ptr1 = this;
+        ListNode<T> ptr2 = (ListNode<T>) that;
         while (ptr1 != null && ptr2 != null) {
             if (ptr1.val != ptr2.val) {
                 return false;

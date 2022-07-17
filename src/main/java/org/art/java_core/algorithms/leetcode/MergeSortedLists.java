@@ -10,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class MergeSortedLists {
 
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode dummy = new ListNode(0);
-        ListNode l3 = dummy;
+    public ListNode<Integer> mergeTwoLists(ListNode<Integer> l1, ListNode<Integer> l2) {
+        ListNode<Integer> dummy = new ListNode<>(0);
+        ListNode<Integer> l3 = dummy;
         while (l1 != null && l2 != null) {
             if (l1.val <= l2.val) {
                 l3.next = l1;
@@ -34,17 +34,17 @@ public class MergeSortedLists {
 
     @Test
     void test0() {
-        ListNode l1 = ListNode.of(1, 2, 4);
-        ListNode l2 = ListNode.of(1, 3, 4);
-        ListNode result = ListNode.of(1, 1, 2, 3, 4, 4);
+        ListNode<Integer> l1 = ListNode.of(1, 2, 4);
+        ListNode<Integer> l2 = ListNode.of(1, 3, 4);
+        ListNode<Integer> result = ListNode.of(1, 1, 2, 3, 4, 4);
         assertEquals(result, mergeTwoLists(l1, l2));
     }
 
     @Test
     void test1() {
-        ListNode l1 = ListNode.of(1, 2, 4);
-        ListNode l2 = ListNode.of(1, 3, 4, 6);
-        ListNode result = ListNode.of(1, 1, 2, 3, 4, 4, 6);
+        ListNode<Integer> l1 = ListNode.of(1, 2, 4);
+        ListNode<Integer> l2 = ListNode.of(1, 3, 4, 6);
+        ListNode<Integer> result = ListNode.of(1, 1, 2, 3, 4, 4, 6);
         assertEquals(result, mergeTwoLists(l1, l2));
     }
 }

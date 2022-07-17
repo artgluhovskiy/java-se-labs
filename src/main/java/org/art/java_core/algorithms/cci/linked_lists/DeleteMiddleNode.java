@@ -11,9 +11,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class DeleteMiddleNode {
 
-    void deleteMiddleNode(ListNode target) {
-        ListNode currentPointer = target;
-        ListNode aheadPointer = target.next;    //no need for null check here according to the problem definition
+    void deleteMiddleNode(ListNode<Integer> target) {
+        ListNode<Integer> currentPointer = target;
+        ListNode<Integer> aheadPointer = target.next;    //no need for null check here according to the problem definition
         do {
             currentPointer.val = aheadPointer.val;
             aheadPointer = aheadPointer.next;
@@ -26,10 +26,10 @@ public class DeleteMiddleNode {
 
     @Test
     void test0() {
-        ListNode inputList = ListNode.of(1, 2, 3, 4, 5, 6, 7);
-        ListNode middleElement = ListNode.getKthElement(4, inputList);
+        ListNode<Integer> inputList = ListNode.of(1, 2, 3, 4, 5, 6, 7);
+        ListNode<Integer> middleElement = ListNode.getKthElement(4, inputList);
         deleteMiddleNode(middleElement);
-        ListNode expected = ListNode.of(1, 2, 3, 5, 6, 7);
+        ListNode<Integer> expected = ListNode.of(1, 2, 3, 5, 6, 7);
         assertEquals(expected, inputList);
     }
 }

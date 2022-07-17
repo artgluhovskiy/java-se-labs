@@ -12,18 +12,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class RemoveDuplicatesFromLinkedList {
 
-    public ListNode removeDuplicates(ListNode list) {
+    public ListNode<Integer> removeDuplicates(ListNode<Integer> list) {
         if (list == null || list.next == null) {
             return list;
         }
 
-        ListNode basePointer = list;
-        ListNode helperPointer = basePointer;
-        ListNode findingPointer = helperPointer.next;
+        ListNode<Integer> basePointer = list;
+        ListNode<Integer> helperPointer = basePointer;
+        ListNode<Integer> findingPointer = helperPointer.next;
 
         do {
             while (helperPointer.next != null) {
-                if (basePointer.val == findingPointer.val) {
+                if (basePointer.val.equals(findingPointer.val)) {
                     helperPointer.next = findingPointer.next;
                     findingPointer = findingPointer.next;
                 } else {
@@ -41,33 +41,33 @@ public class RemoveDuplicatesFromLinkedList {
 
     @Test
     void test0() {
-        ListNode input = ListNode.of(3);
-        ListNode result = removeDuplicates(input);
-        ListNode expected = ListNode.of(3);
+        ListNode<Integer> input = ListNode.of(3);
+        ListNode<Integer> result = removeDuplicates(input);
+        ListNode<Integer> expected = ListNode.of(3);
         assertEquals(expected, result);
     }
 
     @Test
     void test1() {
-        ListNode input = ListNode.of(3, 5);
-        ListNode result = removeDuplicates(input);
-        ListNode expected = ListNode.of(3, 5);
+        ListNode<Integer> input = ListNode.of(3, 5);
+        ListNode<Integer> result = removeDuplicates(input);
+        ListNode<Integer> expected = ListNode.of(3, 5);
         assertEquals(expected, result);
     }
 
     @Test
     void test2() {
-        ListNode input = ListNode.of(3, 5, 3);
-        ListNode result = removeDuplicates(input);
-        ListNode expected = ListNode.of(3, 5);
+        ListNode<Integer> input = ListNode.of(3, 5, 3);
+        ListNode<Integer> result = removeDuplicates(input);
+        ListNode<Integer> expected = ListNode.of(3, 5);
         assertEquals(expected, result);
     }
 
     @Test
     void test3() {
-        ListNode input = ListNode.of(3, 5, 6, 2, 5, 8);
-        ListNode result = removeDuplicates(input);
-        ListNode expected = ListNode.of(3, 5, 6, 2, 8);
+        ListNode<Integer> input = ListNode.of(3, 5, 6, 2, 5, 8);
+        ListNode<Integer> result = removeDuplicates(input);
+        ListNode<Integer> expected = ListNode.of(3, 5, 6, 2, 8);
         assertEquals(expected, result);
     }
 }

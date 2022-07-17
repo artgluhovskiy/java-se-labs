@@ -11,12 +11,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class ReturnKthToLast {
 
-    public int returnKthToLast(int k, ListNode head) {
+    public int returnKthToLast(int k, ListNode<Integer> head) {
         if (head == null) {
             throw new IllegalArgumentException("head cannot be null");
         }
-        ListNode basePointer = head;
-        ListNode aheadPointer = head;
+        ListNode<Integer> basePointer = head;
+        ListNode<Integer> aheadPointer = head;
         for (int i = 0; i < k; i++) {
             if (aheadPointer == null) {
                 throw new IllegalStateException("List size is not enough to find the k-th element to last");
@@ -34,21 +34,21 @@ public class ReturnKthToLast {
 
     @Test
     void test0() {
-        ListNode inputList = ListNode.of(2);
+        ListNode<Integer> inputList = ListNode.of(2);
         int result = returnKthToLast(1, inputList);
         assertEquals(2, result);
     }
 
     @Test
     void test1() {
-        ListNode inputList = ListNode.of(2, 3);
+        ListNode<Integer> inputList = ListNode.of(2, 3);
         int result = returnKthToLast(2, inputList);
         assertEquals(2, result);
     }
 
     @Test
     void test2() {
-        ListNode inputList = ListNode.of(2, 3, 4, 8, 3);
+        ListNode<Integer> inputList = ListNode.of(2, 3, 4, 8, 3);
         int result = returnKthToLast(3, inputList);
         assertEquals(4, result);
     }

@@ -10,12 +10,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class SwapNodesInPairs {
 
-    public ListNode swapPairs(ListNode head) {
+    public ListNode<Integer> swapPairs(ListNode<Integer> head) {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode ptr1 = head;
-        ListNode ptr2 = head.next;
+        ListNode<Integer> ptr1 = head;
+        ListNode<Integer> ptr2 = head.next;
         while (ptr2 != null) {
             ptr1.val = ptr1.val + ptr2.val;
             ptr2.val = ptr1.val - ptr2.val;
@@ -31,9 +31,9 @@ public class SwapNodesInPairs {
 
     @Test
     void test0() {
-        ListNode input = ListNode.of(1, 2, 3, 4);
-        ListNode expected = ListNode.of(2, 1, 4, 3);
-        ListNode result = swapPairs(input);
+        ListNode<Integer> input = ListNode.of(1, 2, 3, 4);
+        ListNode<Integer> expected = ListNode.of(2, 1, 4, 3);
+        ListNode<Integer> result = swapPairs(input);
         assertEquals(expected, result);
     }
 }
