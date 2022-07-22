@@ -2,6 +2,8 @@ package org.art.java_core.algorithms.common.tree;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 import lombok.experimental.UtilityClass;
 import org.apache.commons.collections4.CollectionUtils;
@@ -22,6 +24,7 @@ public class TreeNodePrinter {
      * └── f
      */
     public static <T> String printTree(TreeNode<T> root) {
+        Objects.requireNonNull(root);
         StringBuilder sb = new StringBuilder();
         print(root, StringUtils.EMPTY, StringUtils.EMPTY, sb);
         return sb.toString();
@@ -29,7 +32,7 @@ public class TreeNodePrinter {
 
     private static <T> void print(TreeNode<T> root, String prefix, String childrenPrefix, StringBuilder sb) {
         sb.append(prefix);
-        String name = root.isVisited() ? root.getName().toString().toUpperCase() : root.getName().toString().toLowerCase();
+        String name = root.isVisited() ? root.getElem().toString().toUpperCase() : root.getElem().toString().toLowerCase();
         sb.append(name);
         sb.append('\n');
         List<TreeNode<T>> adjacentNodes = root.getAdjacentNodes();

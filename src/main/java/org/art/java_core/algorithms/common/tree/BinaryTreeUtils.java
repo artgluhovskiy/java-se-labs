@@ -3,8 +3,6 @@ package org.art.java_core.algorithms.common.tree;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.art.java_core.algorithms.common.tree.BinaryTreeNode;
-
 public class BinaryTreeUtils {
 
     /**
@@ -15,11 +13,11 @@ public class BinaryTreeUtils {
      * @param root the root of the binary tree
      * @return the list of tree values (in a sorted order)
      */
-    public static List<Integer> inoderTreeWalk(BinaryTreeNode root, List<Integer> list) {
+    public static List<Integer> inOrderTreeWalk(BinaryTreeNode<Integer> root, List<Integer> list) {
         if (root != null) {
-            inoderTreeWalk(root.left, list);
-            list.add(root.value);
-            inoderTreeWalk(root.right, list);
+            inOrderTreeWalk(root.left, list);
+            list.add(root.getElem());
+            inOrderTreeWalk(root.right, list);
         }
         return list;
     }
@@ -28,14 +26,14 @@ public class BinaryTreeUtils {
      * Searches the value in the tree and return the
      * reference to the tree node with such value.
      */
-    public static BinaryTreeNode search(BinaryTreeNode root, int value) {
-        if (root == null || root.value == value) {
+    public static <T extends Comparable<T>> BinaryTreeNode<T> search(BinaryTreeNode<T> root, T elem) {
+        if (root == null || root.getElem().compareTo(elem) == 0) {
             return root;
         }
-        if (value < root.value) {
-            return search(root.left, value);
+        if (elem.compareTo(root.getElem()) < 0) {
+            return search(root.left, elem);
         } else {
-            return search(root.right, value);
+            return search(root.right, elem);
         }
     }
 
@@ -45,23 +43,23 @@ public class BinaryTreeUtils {
      * @param root the tree to insert the node
      * @param node the node to insert
      */
-    public static void insertNode(BinaryTreeNode root, BinaryTreeNode node) {
-        BinaryTreeNode y = null;
-        BinaryTreeNode x = root;
+    public static <T extends Comparable<T>> void insertNode(BinaryTreeNode<T> root, BinaryTreeNode<T> node) {
+        BinaryTreeNode<T> y = null;
+        BinaryTreeNode<T> x = root;
         if (x == null) {
             root = node;
             return;
         }
         while (x != null) {
             y = x;
-            if (node.value < x.value) {
+            if (node.getElem().compareTo(x.getElem()) < 0) {
                 x = x.left;
             } else {
                 x = x.right;
             }
         }
         node.parent = y;
-        if (node.value < y.value) {
+        if (node.getElem().compareTo(y.getElem()) < 0) {
             y.left = node;
         } else {
             y.right = node;
@@ -149,7 +147,7 @@ public class BinaryTreeUtils {
 
         //Tree walk test
         List<Integer> list1 = new ArrayList<>();
-        inoderTreeWalk(root, list1);
+        inOrderTreeWalk(root, list1);
         System.out.println(list1);
 
         //Tree search test
@@ -159,7 +157,7 @@ public class BinaryTreeUtils {
         //Delete test
         List<Integer> list2 = new ArrayList<>();
         deleteNode(root, node4);
-        inoderTreeWalk(root, list2);
+        inOrderTreeWalk(root, list2);
         System.out.println(list2);
     }
 }

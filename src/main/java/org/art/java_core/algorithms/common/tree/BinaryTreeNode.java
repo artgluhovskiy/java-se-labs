@@ -1,17 +1,32 @@
 package org.art.java_core.algorithms.common.tree;
 
+import java.util.Objects;
+import java.util.stream.Stream;
+
+import lombok.Getter;
+
+import static java.util.stream.Collectors.toList;
+
 /**
  * Binary Tree node implementation.
  */
-public class BinaryTreeNode {
+@Getter
+public class BinaryTreeNode<T> extends TreeNode<T> {
 
-    public int value;
-    public BinaryTreeNode left;
-    public BinaryTreeNode right;
-    public BinaryTreeNode parent;
+    public BinaryTreeNode<T> left;
 
-    public BinaryTreeNode(int value, BinaryTreeNode left, BinaryTreeNode right, BinaryTreeNode parent) {
-        this.value = value;
+    public BinaryTreeNode<T> right;
+
+    public BinaryTreeNode<T> parent;
+
+    public BinaryTreeNode(T elem, BinaryTreeNode<T> left, BinaryTreeNode<T> right) {
+        super(elem, Stream.of(left, right).filter(Objects::nonNull).collect(toList()));
+        this.left = left;
+        this.right = right;
+    }
+
+    public BinaryTreeNode(T elem, BinaryTreeNode<T> left, BinaryTreeNode<T> right, BinaryTreeNode<T> parent) {
+        super(elem, Stream.of(left, right).filter(Objects::nonNull).collect(toList()));
         this.left = left;
         this.right = right;
         this.parent = parent;
@@ -20,10 +35,27 @@ public class BinaryTreeNode {
     @Override
     public String toString() {
         return "TreeNode {" +
-                " value = " + value +
-                ", left value = " + (left != null ? left.value : "null") +
-                ", right value = " + (right != null ? right.value : "null") +
-                ", parent value = " + (parent != null ? parent.value : "null") +
-                " }";
+            " elem = " + getElem() +
+            ", left value = " + (left != null ? left.getElem() : "null") +
+            ", right value = " + (right != null ? right.getElem() : "null") +
+            ", parent value = " + (parent != null ? parent.getElem() : "null") +
+            " }";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        BinaryTreeNode<T> that = (BinaryTreeNode<T>) o;
+        return getElem() == that.getElem() && Objects.equals(left, that.left) && Objects.equals(right, that.right);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getElem(), left, right, parent);
     }
 }
