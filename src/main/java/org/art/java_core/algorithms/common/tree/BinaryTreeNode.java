@@ -1,16 +1,16 @@
-package org.art.java_core.algorithms.common;
+package org.art.java_core.algorithms.common.tree;
 
 /**
  * Binary Tree node implementation.
  */
-public class TreeNode {
+public class BinaryTreeNode {
 
     public int value;
-    public TreeNode left;
-    public TreeNode right;
-    public TreeNode parent;
+    public BinaryTreeNode left;
+    public BinaryTreeNode right;
+    public BinaryTreeNode parent;
 
-    public TreeNode(int value, TreeNode left, TreeNode right, TreeNode parent) {
+    public BinaryTreeNode(int value, BinaryTreeNode left, BinaryTreeNode right, BinaryTreeNode parent) {
         this.value = value;
         this.left = left;
         this.right = right;

@@ -1,7 +1,9 @@
-package org.art.java_core.algorithms.common;
+package org.art.java_core.algorithms.common.tree;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.art.java_core.algorithms.common.tree.BinaryTreeNode;
 
 public class BinaryTreeUtils {
 
@@ -13,7 +15,7 @@ public class BinaryTreeUtils {
      * @param root the root of the binary tree
      * @return the list of tree values (in a sorted order)
      */
-    public static List<Integer> inoderTreeWalk(TreeNode root, List<Integer> list) {
+    public static List<Integer> inoderTreeWalk(BinaryTreeNode root, List<Integer> list) {
         if (root != null) {
             inoderTreeWalk(root.left, list);
             list.add(root.value);
@@ -26,7 +28,7 @@ public class BinaryTreeUtils {
      * Searches the value in the tree and return the
      * reference to the tree node with such value.
      */
-    public static TreeNode search(TreeNode root, int value) {
+    public static BinaryTreeNode search(BinaryTreeNode root, int value) {
         if (root == null || root.value == value) {
             return root;
         }
@@ -43,9 +45,9 @@ public class BinaryTreeUtils {
      * @param root the tree to insert the node
      * @param node the node to insert
      */
-    public static void insertNode(TreeNode root, TreeNode node) {
-        TreeNode y = null;
-        TreeNode x = root;
+    public static void insertNode(BinaryTreeNode root, BinaryTreeNode node) {
+        BinaryTreeNode y = null;
+        BinaryTreeNode x = root;
         if (x == null) {
             root = node;
             return;
@@ -72,13 +74,13 @@ public class BinaryTreeUtils {
      * @param root the root of the tree
      * @param target the services node to delete
      */
-    public static void deleteNode(TreeNode root, TreeNode target) {
+    public static void deleteNode(BinaryTreeNode root, BinaryTreeNode target) {
         if (target.left == null) {
             transplant(root, target, target.right);
         } else if (target.right == null) {
             transplant(root, target, target.left);
         } else {
-            TreeNode minNode = minimum(target.right);
+            BinaryTreeNode minNode = minimum(target.right);
             if (minNode.parent != target) {
                 transplant(root, minNode, minNode.right);
                 minNode.right = target.right;
@@ -90,7 +92,7 @@ public class BinaryTreeUtils {
         }
     }
 
-    private static void transplant(TreeNode root, TreeNode target, TreeNode replacement) {
+    private static void transplant(BinaryTreeNode root, BinaryTreeNode target, BinaryTreeNode replacement) {
         if (target.parent == null) {
             root = replacement;
         } else if (target.parent.right == target) {
@@ -103,15 +105,15 @@ public class BinaryTreeUtils {
         }
     }
 
-    private static TreeNode minimum(TreeNode root) {
+    private static BinaryTreeNode minimum(BinaryTreeNode root) {
         while (root.left != null) {
             root = root.left;
         }
         return root;
     }
 
-    private static void leftRotate(TreeNode root, TreeNode nodeToRotate) {
-        TreeNode y = nodeToRotate.right;
+    private static void leftRotate(BinaryTreeNode root, BinaryTreeNode nodeToRotate) {
+        BinaryTreeNode y = nodeToRotate.right;
         nodeToRotate.right = y.left;
         if (y.left != null) {
             y.left.parent = nodeToRotate;
@@ -130,12 +132,12 @@ public class BinaryTreeUtils {
 
     public static void main(String[] args) {
 
-        TreeNode root = new TreeNode(6, null, null, null);
-        TreeNode node2 = new TreeNode(5, null, null, null);
-        TreeNode node3 = new TreeNode(7, null, null, null);
-        TreeNode node4 = new TreeNode(2, null, null, null);
-        TreeNode node5 = new TreeNode(5, null, null, null);
-        TreeNode node6 = new TreeNode(8, null, null, null);
+        BinaryTreeNode root = new BinaryTreeNode(6, null, null, null);
+        BinaryTreeNode node2 = new BinaryTreeNode(5, null, null, null);
+        BinaryTreeNode node3 = new BinaryTreeNode(7, null, null, null);
+        BinaryTreeNode node4 = new BinaryTreeNode(2, null, null, null);
+        BinaryTreeNode node5 = new BinaryTreeNode(5, null, null, null);
+        BinaryTreeNode node6 = new BinaryTreeNode(8, null, null, null);
 
         //Insertion test
         List<Integer> list0 = new ArrayList<>();
@@ -151,7 +153,7 @@ public class BinaryTreeUtils {
         System.out.println(list1);
 
         //Tree search test
-        TreeNode targetNode = search(root, 8);
+        BinaryTreeNode targetNode = search(root, 8);
         System.out.println(targetNode);
 
         //Delete test
