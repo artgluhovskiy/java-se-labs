@@ -1,6 +1,6 @@
 package org.art.java_core.algorithms;
 
-import org.art.java_core.algorithms.common.ListNode;
+import org.art.java_core.algorithms.common.lists.ListNode;
 
 /**
  * The algorithm implementation, which checks

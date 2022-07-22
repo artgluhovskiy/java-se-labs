@@ -1,4 +1,4 @@
-package org.art.java_core.algorithms.common;
+package org.art.java_core.algorithms.common.lists;
 
 /**
  * Helper class for coding problems related to the Singly Linked Lists.
@@ -29,26 +29,6 @@ public class ListNode<T> {
             list = list.next;
         }
         return resList;
-    }
-
-    public static <T> ListNode<T> getKthElement(int k, ListNode<T> list) {
-        if (list == null) {
-            throw new IllegalArgumentException("list cannot be null");
-        }
-        if (k == 0) {
-            throw new IllegalArgumentException("k cannot be zero");
-        }
-        if (k == 1) {
-            return list;
-        }
-        ListNode<T> result = list;
-        for (int i = 0; i < k - 1; i++) {
-            if (result.next == null) {
-                throw new IllegalStateException("Cannot get the k-th element of the list. The list size is not enough");
-            }
-            result = result.next;
-        }
-        return result;
     }
 
     @Override

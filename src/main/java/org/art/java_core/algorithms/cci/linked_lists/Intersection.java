@@ -1,6 +1,6 @@
 package org.art.java_core.algorithms.cci.linked_lists;
 
-import org.art.java_core.algorithms.common.ListNode;
+import org.art.java_core.algorithms.common.lists.ListNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -8,43 +8,52 @@ import static org.junit.jupiter.api.Assertions.assertSame;
 
 /**
  * "Intersection in Singly Linked Lists" solution from "Cracking the Coding Interview".
- * "2-pointers approach" is used.
  */
 public class Intersection {
 
-    public ListNode<Integer> findIntersection(ListNode<Integer> list1, ListNode<Integer> list2) {
-        if (list1 == null || list2 == null) {
+    public ListNode<Integer> findIntersection(ListNode<Integer> head1, ListNode<Integer> head2) {
+        if (head1 == null || head2 == null) {
             throw new IllegalArgumentException("lists cannot be null");
         }
-        ListNode<Integer> result = findIntersectionHelper(list1, list2);
-        if (result != null) {
-            return result;
-        } else {
-            return findIntersectionHelper(list2, list1);
-        }
-    }
 
-    private ListNode<Integer> findIntersectionHelper(ListNode<Integer> list1, ListNode<Integer> list2) {
-        if (list1 == list2) {
-            return list1;
+        ListNode<Integer> current1 = head1;
+        int length1 = 0;
+        while (current1 != null) {
+            length1++;
+            current1 = current1.next;
         }
-        ListNode<Integer> oneStepPointer = list1;
-        ListNode<Integer> twoStepPointer = list2;
-        while (oneStepPointer.next != null && twoStepPointer.next != null) {
-            oneStepPointer = oneStepPointer.next;
-            twoStepPointer = twoStepPointer.next;
-            if (oneStepPointer == twoStepPointer) {
-                return oneStepPointer;
-            }
-            twoStepPointer = twoStepPointer.next;
-            if (twoStepPointer == null) {
-                return null;
-            }
-            if (oneStepPointer == twoStepPointer) {
-                return oneStepPointer;
-            }
+
+        ListNode<Integer> current2 = head2;
+        int length2 = 0;
+        while (current2 != null) {
+            length2++;
+            current2 = current2.next;
         }
-        return null;
+
+        if (current1 != current2) {
+            return null;
+        }
+
+        ListNode<Integer> longList;
+        ListNode<Integer> shortList;
+        if (length1 > length2) {
+            longList = head1;
+            shortList = head2;
+        } else {
+            longList = head2;
+            shortList = head1;
+        }
+
+        for (int i = 0; i < Math.abs(length1 - length2); i++) {
+            longList = longList.next;
+        }
+
+        while (longList != shortList) {
+            longList = longList.next;
+            shortList = shortList.next;
+        }
+
+        return longList;
     }
 
     @Test
@@ -57,7 +66,7 @@ public class Intersection {
     }
 
     @Test
-    void test2() {
+    void test1() {
         ListNode<Integer> list1 = new ListNode<>(4, new ListNode<>(2, new ListNode<>(7, null)));
         ListNode<Integer> list2 = new ListNode<>(5, new ListNode<>(10, null));
         ListNode<Integer> intersectionResult = findIntersection(list1, list2);
@@ -65,7 +74,7 @@ public class Intersection {
     }
 
     @Test
-    void test3() {
+    void test2() {
         ListNode<Integer> list = new ListNode<>(4, new ListNode<>(2, new ListNode<>(7, null)));
         ListNode<Integer> intersectionResult = findIntersection(list, list);
         assertSame(list, intersectionResult);

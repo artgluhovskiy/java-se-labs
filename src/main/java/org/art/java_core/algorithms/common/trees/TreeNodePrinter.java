@@ -1,9 +1,8 @@
-package org.art.java_core.algorithms.common.tree;
+package org.art.java_core.algorithms.common.trees;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 import lombok.experimental.UtilityClass;
 import org.apache.commons.collections4.CollectionUtils;

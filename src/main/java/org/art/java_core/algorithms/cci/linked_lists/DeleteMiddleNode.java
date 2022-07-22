@@ -1,6 +1,7 @@
 package org.art.java_core.algorithms.cci.linked_lists;
 
-import org.art.java_core.algorithms.common.ListNode;
+import org.art.java_core.algorithms.common.lists.ListNode;
+import org.art.java_core.algorithms.common.lists.ListNodeUtils;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -27,7 +28,7 @@ public class DeleteMiddleNode {
     @Test
     void test0() {
         ListNode<Integer> inputList = ListNode.of(1, 2, 3, 4, 5, 6, 7);
-        ListNode<Integer> middleElement = ListNode.getKthElement(4, inputList);
+        ListNode<Integer> middleElement = ListNodeUtils.getKthElement(4, inputList);
         deleteMiddleNode(middleElement);
         ListNode<Integer> expected = ListNode.of(1, 2, 3, 5, 6, 7);
         assertEquals(expected, inputList);

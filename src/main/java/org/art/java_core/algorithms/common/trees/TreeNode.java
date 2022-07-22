@@ -1,4 +1,4 @@
-package org.art.java_core.algorithms.common.tree;
+package org.art.java_core.algorithms.common.trees;
 
 import java.util.List;
 

@@ -20,4 +20,8 @@ public class Utils {
                     }
                 }), HashMap::putAll);
     }
+
+    public static int adjustIndex(int index, int arrLength) {
+        return (arrLength + index % arrLength) % arrLength;
+    }
 }

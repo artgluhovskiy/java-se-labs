@@ -1,7 +1,7 @@
 package org.art.java_core.algorithms.cci.graphs.trees;
 
-import org.art.java_core.algorithms.common.tree.BinaryTreeNode;
-import org.art.java_core.algorithms.common.tree.TreeNodePrinter;
+import org.art.java_core.algorithms.common.trees.BinaryTreeNode;
+import org.art.java_core.algorithms.common.trees.TreeNodePrinter;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
