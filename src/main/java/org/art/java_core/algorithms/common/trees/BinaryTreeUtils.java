@@ -130,12 +130,12 @@ public class BinaryTreeUtils {
 
     public static void main(String[] args) {
 
-        BinaryTreeNode root = new BinaryTreeNode(6, null, null, null);
-        BinaryTreeNode node2 = new BinaryTreeNode(5, null, null, null);
-        BinaryTreeNode node3 = new BinaryTreeNode(7, null, null, null);
-        BinaryTreeNode node4 = new BinaryTreeNode(2, null, null, null);
-        BinaryTreeNode node5 = new BinaryTreeNode(5, null, null, null);
-        BinaryTreeNode node6 = new BinaryTreeNode(8, null, null, null);
+        BinaryTreeNode<Integer> root = new BinaryTreeNode<>(6, null, null);
+        BinaryTreeNode<Integer> node2 = new BinaryTreeNode<>(5, null, null);
+        BinaryTreeNode<Integer> node3 = new BinaryTreeNode<>(7, null, null);
+        BinaryTreeNode<Integer> node4 = new BinaryTreeNode<>(2, null, null);
+        BinaryTreeNode<Integer> node5 = new BinaryTreeNode<>(5, null, null);
+        BinaryTreeNode<Integer> node6 = new BinaryTreeNode<>(8, null, null);
 
         //Insertion test
         List<Integer> list0 = new ArrayList<>();
@@ -151,7 +151,7 @@ public class BinaryTreeUtils {
         System.out.println(list1);
 
         //Tree search test
-        BinaryTreeNode targetNode = search(root, 8);
+        BinaryTreeNode<Integer> targetNode = search(root, 8);
         System.out.println(targetNode);
 
         //Delete test

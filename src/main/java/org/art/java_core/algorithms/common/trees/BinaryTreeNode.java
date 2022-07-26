@@ -22,13 +22,17 @@ public class BinaryTreeNode<T> extends TreeNode<T> {
     public BinaryTreeNode(T elem, BinaryTreeNode<T> left, BinaryTreeNode<T> right) {
         super(elem, Stream.of(left, right).filter(Objects::nonNull).collect(toList()));
         this.left = left;
+        if (left != null) {
+            this.left.setParent(this);
+        }
         this.right = right;
+        if (right != null) {
+            this.right.setParent(this);
+
+        }
     }
 
-    public BinaryTreeNode(T elem, BinaryTreeNode<T> left, BinaryTreeNode<T> right, BinaryTreeNode<T> parent) {
-        super(elem, Stream.of(left, right).filter(Objects::nonNull).collect(toList()));
-        this.left = left;
-        this.right = right;
+    public void setParent(BinaryTreeNode<T> parent) {
         this.parent = parent;
     }
 
