@@ -3,7 +3,7 @@ package org.art.java_core.algorithms.cci.graphs.trees;
 import java.util.Objects;
 
 import lombok.Getter;
-import org.art.java_core.algorithms.common.trees.BinaryTreeNode;
+import org.art.java_core.algorithms.common.graphs.trees.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

@@ -1,4 +1,4 @@
-package org.art.java_core.algorithms.common.trees;
+package org.art.java_core.algorithms.common.graphs.trees;
 
 import java.util.Iterator;
 import java.util.List;
