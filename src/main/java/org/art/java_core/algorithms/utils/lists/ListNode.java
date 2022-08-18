@@ -1,4 +1,4 @@
-package org.art.java_core.algorithms.common.lists;
+package org.art.java_core.algorithms.utils.lists;
 
 /**
  * Helper class for coding problems related to the Singly Linked Lists.

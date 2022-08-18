@@ -2,8 +2,8 @@ package org.art.java_core.algorithms.cci.graphs.trees;
 
 import java.util.Objects;
 
-import org.art.java_core.algorithms.common.graphs.trees.BinaryTreeNode;
-import org.art.java_core.algorithms.common.graphs.trees.BinaryTreeUtils;
+import org.art.java_core.algorithms.utils.graphs.trees.BinaryTreeNode;
+import org.art.java_core.algorithms.utils.graphs.trees.BinaryTreeUtils;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertSame;

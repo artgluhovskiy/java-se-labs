@@ -1,6 +1,6 @@
 package org.art.java_core.algorithms.leetcode;
 
-import org.art.java_core.algorithms.common.AssertionUtils;
+import org.art.java_core.algorithms.utils.AssertionUtils;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

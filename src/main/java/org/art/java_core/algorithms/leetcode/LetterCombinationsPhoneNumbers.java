@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
-import static org.art.java_core.algorithms.common.CustomStringSetMatcher.setOfStrings;
+import static org.art.java_core.algorithms.utils.CustomStringSetMatcher.setOfStrings;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 

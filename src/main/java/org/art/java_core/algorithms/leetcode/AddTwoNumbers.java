@@ -1,7 +1,7 @@
 package org.art.java_core.algorithms.leetcode;
 
 import lombok.extern.slf4j.Slf4j;
-import org.art.java_core.algorithms.common.lists.ListNode;
+import org.art.java_core.algorithms.utils.lists.ListNode;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

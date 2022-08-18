@@ -2,7 +2,7 @@ package org.art.java_core.algorithms.cci.arrays_strings;
 
 import java.util.Map;
 
-import org.art.java_core.algorithms.common.Utils;
+import org.art.java_core.algorithms.utils.Utils;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

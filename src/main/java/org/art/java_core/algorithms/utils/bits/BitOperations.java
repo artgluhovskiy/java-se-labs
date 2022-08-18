@@ -1,4 +1,4 @@
-package org.art.java_core.algorithms.common.bits;
+package org.art.java_core.algorithms.utils.bits;
 
 import lombok.experimental.UtilityClass;
 

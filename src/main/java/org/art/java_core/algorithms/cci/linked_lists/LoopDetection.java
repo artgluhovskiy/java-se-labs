@@ -1,6 +1,6 @@
 package org.art.java_core.algorithms.cci.linked_lists;
 
-import org.art.java_core.algorithms.common.lists.ListNode;
+import org.art.java_core.algorithms.utils.lists.ListNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNull;

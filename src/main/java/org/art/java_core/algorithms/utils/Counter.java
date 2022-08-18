@@ -1,4 +1,4 @@
-package org.art.java_core.algorithms.common;
+package org.art.java_core.algorithms.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

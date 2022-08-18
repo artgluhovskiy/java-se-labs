@@ -2,10 +2,10 @@ package org.art.java_core.algorithms.cci.graphs;
 
 import java.util.List;
 
-import org.art.java_core.algorithms.common.graphs.trees.TreeNode;
+import org.art.java_core.algorithms.utils.graphs.trees.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.art.java_core.algorithms.common.graphs.trees.TreeUtils.bfsSearch;
+import static org.art.java_core.algorithms.utils.graphs.trees.TreeUtils.bfsSearch;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

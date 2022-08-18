@@ -1,10 +1,10 @@
-package org.art.java_core.algorithms.common.queues;
+package org.art.java_core.algorithms.utils.queues;
 
 import java.util.Arrays;
 
-import org.art.java_core.algorithms.common.arrays.HeapArrayUtils;
+import org.art.java_core.algorithms.utils.arrays.HeapArrayUtils;
 
-import static org.art.java_core.algorithms.common.arrays.HeapArrayUtils.buildMaxHeap;
+import static org.art.java_core.algorithms.utils.arrays.HeapArrayUtils.buildMaxHeap;
 
 /**
  * Util methods for 'Priority Queue' data structure.

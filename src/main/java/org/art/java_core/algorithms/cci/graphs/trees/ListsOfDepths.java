@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import org.art.java_core.algorithms.common.graphs.trees.BinaryTreeNode;
-import org.art.java_core.algorithms.common.graphs.trees.TreeNodePrinter;
+import org.art.java_core.algorithms.utils.graphs.trees.BinaryTreeNode;
+import org.art.java_core.algorithms.utils.graphs.trees.TreeNodePrinter;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

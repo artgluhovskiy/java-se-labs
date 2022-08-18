@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.art.java_core.algorithms.common.graphs.trees.BinaryTreeNode;
+import org.art.java_core.algorithms.utils.graphs.trees.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
 /**

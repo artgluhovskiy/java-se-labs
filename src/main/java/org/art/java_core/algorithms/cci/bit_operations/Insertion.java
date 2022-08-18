@@ -1,6 +1,6 @@
 package org.art.java_core.algorithms.cci.bit_operations;
 
-import org.art.java_core.algorithms.common.bits.BitOperations;
+import org.art.java_core.algorithms.utils.bits.BitOperations;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
