@@ -1,4 +1,4 @@
-package org.art.samples.core.date_time;
+package org.art.samples.core.time;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

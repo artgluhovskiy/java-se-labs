@@ -63,7 +63,7 @@
 
     <dependencies>
 
-        <!-- Code plugging -->
+        <!-- Code Generation -->
 
         <dependency>
             <groupId>org.projectlombok</groupId>

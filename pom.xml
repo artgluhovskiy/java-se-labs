@@ -10,10 +10,38 @@
 
     <modules>
         <module>samples-core</module>
+        <module>samples-annotation-processing</module>
+        <module>samples-jcstress</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jcstress.version>0.4</jcstress.version>
+        <kotlin-stdlib.version>1.3.20</kotlin-stdlib.version>
+        <kotlinx-coroutines-core.version>1.2.2</kotlinx-coroutines-core.version>
+        <jol-core.version>0.9</jol-core.version>
+        <groovy-all.version>3.0.12</groovy-all.version>
+        <hamcrest-all.version>1.3</hamcrest-all.version>
+        <junit-platform-runner.version>1.2.0</junit-platform-runner.version>
+        <junit-jupiter-engine.version>5.2.0</junit-jupiter-engine.version>
+        <javassist.version>3.24.0-GA</javassist.version>
+        <cglib.version>3.2.8</cglib.version>
+        <commons-io.version>2.6</commons-io.version>
+        <commons-lang3.version>3.7</commons-lang3.version>
+        <trove4j.version>3.0.3</trove4j.version>
+        <ftpserver-core.version>1.1.1</ftpserver-core.version>
+        <poi.version>3.17</poi.version>
+        <geoip2.version>2.13.1</geoip2.version>
+        <logback-classic.version>1.1.7</logback-classic.version>
+        <reactive-streams-tck.version>1.0.4</reactive-streams-tck.version>
+        <reactor-test.version>3.4.24</reactor-test.version>
+        <rxjava.version>2.2.9</rxjava.version>
+        <async-http-client.version>1.9.40</async-http-client.version>
+        <gson.version>2.10</gson.version>
+        <guava.version>24.0-jre</guava.version>
+        <jsoup.version>1.11.2</jsoup.version>
+        <log4j-core.version>2.10.0</log4j-core.version>
+        <lombok.version>1.18.2</lombok.version>
     </properties>
 
     <build>
@@ -74,12 +102,12 @@
     <dependencyManagement>
         <dependencies>
 
-            <!-- Code plugging -->
+            <!-- Code Generation -->
 
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.2</version>
+                <version>${lombok.version}</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -88,7 +116,7 @@
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
-                <version>2.10.0</version>
+                <version>${log4j-core.version}</version>
             </dependency>
 
             <!-- HTML Dom -->
@@ -96,7 +124,7 @@
             <dependency>
                 <groupId>org.jsoup</groupId>
                 <artifactId>jsoup</artifactId>
-                <version>1.11.2</version>
+                <version>${jsoup.version}</version>
             </dependency>
 
             <!-- Guava -->
@@ -104,7 +132,7 @@
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>24.0-jre</version>
+                <version>${guava.version}</version>
             </dependency>
 
             <!-- Json -->
@@ -112,7 +140,7 @@
             <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
-                <version>2.10</version>
+                <version>${gson.version}</version>
             </dependency>
 
             <!-- Reactive -->
@@ -120,38 +148,38 @@
             <dependency>
                 <groupId>com.ning</groupId>
                 <artifactId>async-http-client</artifactId>
-                <version>1.9.40</version>
+                <version>${async-http-client.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.reactivex.rxjava2</groupId>
                 <artifactId>rxjava</artifactId>
-                <version>2.2.9</version>
+                <version>${rxjava.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.reactivestreams</groupId>
                 <artifactId>reactive-streams</artifactId>
-                <version>1.0.4</version>
+                <version>${reactive-streams-tck.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-core</artifactId>
-                <version>3.4.24</version>
+                <version>${reactor-test.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-test</artifactId>
-                <version>3.4.24</version>
+                <version>${reactor-test.version}</version>
                 <scope>test</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.reactivestreams</groupId>
                 <artifactId>reactive-streams-tck</artifactId>
-                <version>1.0.4</version>
+                <version>${reactive-streams-tck.version}</version>
             </dependency>
 
             <!-- Logging -->
@@ -159,14 +187,14 @@
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.1.7</version>
+                <version>${logback-classic.version}</version>
             </dependency>
 
             <!-- Geolocation -->
             <dependency>
                 <groupId>com.maxmind.geoip2</groupId>
                 <artifactId>geoip2</artifactId>
-                <version>2.13.1</version>
+                <version>${geoip2.version}</version>
             </dependency>
 
             <!-- Apache POI -->
@@ -174,19 +202,19 @@
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml-schemas</artifactId>
-                <version>3.17</version>
+                <version>${poi.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
-                <version>3.17</version>
+                <version>${poi.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
-                <version>3.17</version>
+                <version>${poi.version}</version>
             </dependency>
 
             <!-- FTP -->
@@ -194,7 +222,7 @@
             <dependency>
                 <groupId>org.apache.ftpserver</groupId>
                 <artifactId>ftpserver-core</artifactId>
-                <version>1.1.1</version>
+                <version>${ftpserver-core.version}</version>
             </dependency>
 
             <!-- Trove -->
@@ -202,7 +230,7 @@
             <dependency>
                 <groupId>net.sf.trove4j</groupId>
                 <artifactId>trove4j</artifactId>
-                <version>3.0.3</version>
+                <version>${trove4j.version}</version>
             </dependency>
 
             <!-- Apache Commons -->
@@ -210,13 +238,13 @@
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.7</version>
+                <version>${commons-lang3.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>2.6</version>
+                <version>${commons-io.version}</version>
             </dependency>
 
             <!-- Byte code generation -->
@@ -224,7 +252,7 @@
             <dependency>
                 <groupId>cglib</groupId>
                 <artifactId>cglib</artifactId>
-                <version>3.2.8</version>
+                <version>${cglib.version}</version>
             </dependency>
 
             <!-- Byte code manipulation -->
@@ -232,7 +260,7 @@
             <dependency>
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
-                <version>3.24.0-GA</version>
+                <version>${javassist.version}</version>
             </dependency>
 
             <!-- TDD -->
@@ -240,19 +268,19 @@
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-engine</artifactId>
-                <version>5.2.0</version>
+                <version>${junit-jupiter-engine.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.junit.platform</groupId>
                 <artifactId>junit-platform-runner</artifactId>
-                <version>1.2.0</version>
+                <version>${junit-platform-runner.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.hamcrest</groupId>
                 <artifactId>hamcrest-all</artifactId>
-                <version>1.3</version>
+                <version>${hamcrest-all.version}</version>
             </dependency>
 
             <!-- Groovy -->
@@ -260,7 +288,7 @@
             <dependency>
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-all</artifactId>
-                <version>3.0.12</version>
+                <version>${groovy-all.version}</version>
                 <type>pom</type>
             </dependency>
 
@@ -269,7 +297,7 @@
             <dependency>
                 <groupId>org.openjdk.jol</groupId>
                 <artifactId>jol-core</artifactId>
-                <version>0.9</version>
+                <version>${jol-core.version}</version>
             </dependency>
 
             <!-- Kotlin -->
@@ -277,15 +305,22 @@
             <dependency>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-stdlib</artifactId>
-                <version>1.3.20</version>
+                <version>${kotlin-stdlib.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.jetbrains.kotlinx</groupId>
                 <artifactId>kotlinx-coroutines-core</artifactId>
-                <version>1.2.2</version>
+                <version>${kotlinx-coroutines-core.version}</version>
             </dependency>
 
+            <!-- Tools -->
+
+            <dependency>
+                <groupId>org.openjdk.jcstress</groupId>
+                <artifactId>jcstress-core</artifactId>
+                <version>${jcstress.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
