@@ -1,9 +1,9 @@
-package main.java.org.art.samples.core.algorithms.cci.graphs.trees;
+package org.art.samples.core.algorithms.cci.graphs.trees;
 
 import java.util.Objects;
 
 import lombok.Getter;
-import main.java.org.art.samples.core.algorithms.utils.graphs.trees.BinaryTreeNode;
+import org.art.samples.core.algorithms.utils.graphs.trees.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

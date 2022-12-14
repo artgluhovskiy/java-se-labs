@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.complitable_future;
+package org.art.samples.core.complitable_future;
 
 import com.ning.http.client.AsyncCompletionHandler;
 import com.ning.http.client.Response;

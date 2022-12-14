@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.java_util_concurrent.lock.advanced_blocked_buffer;
+package org.art.samples.core.concurrent.java_util_concurrent.lock.advanced_blocked_buffer;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

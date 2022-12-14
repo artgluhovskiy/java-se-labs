@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.cglib.tx_manager;
+package org.art.samples.core.cglib.tx_manager;
 
 import org.art.samples.core.cglib.tx_manager.context.ApplicationContext;
 import org.art.samples.core.cglib.tx_manager.model.User;

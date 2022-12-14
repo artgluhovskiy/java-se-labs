@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.cci.bit_operations;
+package org.art.samples.core.algorithms.cci.bit_operations;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.codewars;
+package org.art.samples.core.algorithms.codewars;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.javaassist;
+package org.art.samples.core.javaassist;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.complitable_future.http;
+package org.art.samples.core.complitable_future.http;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

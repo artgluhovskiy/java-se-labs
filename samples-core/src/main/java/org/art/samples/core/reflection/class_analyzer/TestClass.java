@@ -1,7 +1,7 @@
-package main.java.org.art.samples.core.reflection.class_analyzer;
+package org.art.samples.core.reflection.class_analyzer;
 
 
-import main.java.org.art.samples.core.reflection.transaction_analyzer.Transaction;
+import org.art.samples.core.reflection.transaction_analyzer.Transaction;
 
 /**
  * Test class for 'Class Analyzer'.

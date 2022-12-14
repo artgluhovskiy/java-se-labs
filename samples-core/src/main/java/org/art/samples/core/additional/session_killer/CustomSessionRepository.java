@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.additional.session_killer;
+package org.art.samples.core.additional.session_killer;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

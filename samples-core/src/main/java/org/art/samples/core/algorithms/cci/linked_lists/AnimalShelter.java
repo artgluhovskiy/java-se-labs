@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.cci.linked_lists;
+package org.art.samples.core.algorithms.cci.linked_lists;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.java_util_concurrent.cyclicbarrier;
+package org.art.samples.core.concurrent.java_util_concurrent.cyclicbarrier;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

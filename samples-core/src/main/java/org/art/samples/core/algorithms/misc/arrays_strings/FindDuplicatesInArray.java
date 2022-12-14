@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.misc.arrays_strings;
+package org.art.samples.core.algorithms.misc.arrays_strings;
 
 import java.util.Set;
 

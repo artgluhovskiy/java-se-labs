@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.stream_api;
+package org.art.samples.core.stream_api;
 
 import lombok.Data;
 import org.apache.commons.lang3.StringUtils;

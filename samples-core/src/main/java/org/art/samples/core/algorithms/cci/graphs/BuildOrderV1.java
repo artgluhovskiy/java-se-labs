@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.cci.graphs;
+package org.art.samples.core.algorithms.cci.graphs;
 
 import java.util.ArrayList;
 import java.util.Arrays;

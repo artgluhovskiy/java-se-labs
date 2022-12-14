@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.cglib.tx_manager.annotations;
+package org.art.samples.core.cglib.tx_manager.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.builder;
+package org.art.samples.core.design.patterns.builder;
 
 /**
  * Builder pattern (from GoF) - simple code example.

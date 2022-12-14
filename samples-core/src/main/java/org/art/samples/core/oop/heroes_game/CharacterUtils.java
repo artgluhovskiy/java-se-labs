@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.oop.heroes_game;
+package org.art.samples.core.oop.heroes_game;
 
 
 import org.art.samples.core.oop.heroes_game.characters.*;

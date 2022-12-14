@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.parallel_processing;
+package org.art.samples.core.concurrent.parallel_processing;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;

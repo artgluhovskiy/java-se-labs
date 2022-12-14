@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.cci.graphs.trees;
+package org.art.samples.core.algorithms.cci.graphs.trees;
 
 import java.util.Random;
 

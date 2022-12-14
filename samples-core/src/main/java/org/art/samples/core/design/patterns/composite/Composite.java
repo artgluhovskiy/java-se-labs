@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.composite;
+package org.art.samples.core.design.patterns.composite;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.command;
+package org.art.samples.core.design.patterns.command;
 
 import java.util.LinkedList;
 

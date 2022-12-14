@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.reflection.test_runner;
+package org.art.samples.core.reflection.test_runner;
 
 import org.art.samples.core.reflection.test_runner.annotations.CustomExceptionTest;
 import org.art.samples.core.reflection.test_runner.annotations.CustomTest;

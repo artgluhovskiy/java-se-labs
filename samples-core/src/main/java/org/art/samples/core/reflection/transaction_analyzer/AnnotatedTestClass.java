@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.reflection.transaction_analyzer;
+package org.art.samples.core.reflection.transaction_analyzer;
 
 /**
  * Annotated Test class.

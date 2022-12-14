@@ -1,8 +1,8 @@
-package main.java.org.art.samples.core.algorithms.cci.arrays_strings;
+package org.art.samples.core.algorithms.cci.arrays_strings;
 
 import java.util.Map;
 
-import main.java.org.art.samples.core.algorithms.utils.Utils;
+import org.art.samples.core.algorithms.utils.Utils;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

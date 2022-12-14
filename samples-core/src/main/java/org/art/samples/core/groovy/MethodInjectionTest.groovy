@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.groovy
+package org.art.samples.core.groovy
 
 class MethodInjectionTest {
 

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms;
+package org.art.samples.core.algorithms;
 
 import org.art.samples.core.algorithms.utils.lists.ListNode;
 

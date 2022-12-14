@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.oop.mad_scientists_game;
+package org.art.samples.core.oop.mad_scientists_game;
 
 import java.util.Deque;
 import java.util.concurrent.ConcurrentLinkedDeque;

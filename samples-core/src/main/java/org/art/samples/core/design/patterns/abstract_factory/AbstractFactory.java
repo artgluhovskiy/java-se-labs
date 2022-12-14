@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.abstract_factory;
+package org.art.samples.core.design.patterns.abstract_factory;
 
 /**
  * Abstract Factory pattern (from GoF) - code example.

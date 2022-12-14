@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.ftp;
+package org.art.samples.core.ftp;
 
 import org.apache.ftpserver.FtpServer;
 import org.apache.ftpserver.FtpServerFactory;

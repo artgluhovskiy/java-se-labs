@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.flow;
+package org.art.samples.core.flow;
 
 import java.util.concurrent.Flow;
 import java.util.concurrent.SubmissionPublisher;

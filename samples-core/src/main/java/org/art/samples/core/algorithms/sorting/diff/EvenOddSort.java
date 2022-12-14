@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.sorting.diff;
+package org.art.samples.core.algorithms.sorting.diff;
 
 import java.util.Arrays;
 

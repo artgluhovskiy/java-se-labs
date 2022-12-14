@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.generics;
+package org.art.samples.core.generics;
 
 /**
  * Extended version of Pair container.

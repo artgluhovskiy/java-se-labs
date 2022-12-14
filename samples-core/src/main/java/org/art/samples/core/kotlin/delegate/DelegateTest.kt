@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.kotlin.delegate
+package org.art.samples.core.kotlin.delegate
 
 import kotlin.properties.Delegates
 import kotlin.reflect.KProperty

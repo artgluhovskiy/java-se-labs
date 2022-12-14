@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.decorator;
+package org.art.samples.core.design.patterns.decorator;
 
 /**
  * Decorator pattern (from GoF) - simple code example.

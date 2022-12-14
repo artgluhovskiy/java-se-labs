@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.cglib.tx_manager.model;
+package org.art.samples.core.cglib.tx_manager.model;
 
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.reactor.array_publisher;
+package org.art.samples.core.reactor.array_publisher;
 
 import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscriber;

@@ -1,4 +1,7 @@
-package org.art.samples.core.annotation_processing.processing.src.org.art.java_core.processing;
+package org.art.samples.processing;
+
+import org.art.samples.processor.Controller;
+import org.art.samples.processor.SecuredInvocation;
 
 /**
  * A simple example of a controller implementation.

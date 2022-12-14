@@ -1,4 +1,4 @@
-package main.java.org.art.samples.processing;
+package org.art.samples.processor;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.RoundEnvironment;

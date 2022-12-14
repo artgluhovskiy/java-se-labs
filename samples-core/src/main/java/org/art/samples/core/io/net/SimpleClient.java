@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.io.net;
+package org.art.samples.core.io.net;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

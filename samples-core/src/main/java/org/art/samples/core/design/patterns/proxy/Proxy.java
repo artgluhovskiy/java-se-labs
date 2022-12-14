@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.proxy;
+package org.art.samples.core.design.patterns.proxy;
 
 /**
  * Proxy pattern (from GoF) - simple code example.

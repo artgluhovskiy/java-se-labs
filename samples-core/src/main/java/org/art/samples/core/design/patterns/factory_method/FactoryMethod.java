@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.factory_method;
+package org.art.samples.core.design.patterns.factory_method;
 
 /**
  * Factory method (from GoF) - simple code example.

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.cci.arrays_strings;
+package org.art.samples.core.algorithms.cci.arrays_strings;
 
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;

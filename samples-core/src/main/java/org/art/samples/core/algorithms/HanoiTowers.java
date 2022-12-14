@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms;
+package org.art.samples.core.algorithms;
 
 /**
  * 'Towers of Hanoi' algorithm implementation (from Stolarov book).

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.reflection.proxy;
+package org.art.samples.core.reflection.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

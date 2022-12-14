@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.exceptions;
+package org.art.samples.core.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.memento;
+package org.art.samples.core.design.patterns.memento;
 
 /**
  * Memento pattern (from GoF) - code example.

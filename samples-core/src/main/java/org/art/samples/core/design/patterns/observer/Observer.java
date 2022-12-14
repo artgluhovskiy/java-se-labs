@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.observer;
+package org.art.samples.core.design.patterns.observer;
 
 import java.util.ArrayList;
 import java.util.List;

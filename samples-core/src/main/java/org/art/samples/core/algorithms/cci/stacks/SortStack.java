@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.cci.stacks;
+package org.art.samples.core.algorithms.cci.stacks;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

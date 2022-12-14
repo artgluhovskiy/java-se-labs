@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.fork_join_pool;
+package org.art.samples.core.fork_join_pool;
 
 import java.util.ArrayList;
 import java.util.Arrays;

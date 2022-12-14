@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.java_util_concurrent.semaphore;
+package org.art.samples.core.concurrent.java_util_concurrent.semaphore;
 
 public class ItemConsumer extends Thread {
 

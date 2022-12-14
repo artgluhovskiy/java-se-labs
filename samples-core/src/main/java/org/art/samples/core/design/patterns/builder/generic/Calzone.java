@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.builder.generic;
+package org.art.samples.core.design.patterns.builder.generic;
 
 import lombok.ToString;
 

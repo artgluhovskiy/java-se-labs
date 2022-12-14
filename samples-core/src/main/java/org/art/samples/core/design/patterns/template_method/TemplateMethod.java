@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.template_method;
+package org.art.samples.core.design.patterns.template_method;
 
 /**
  * Template method (from GoF) - simple code example.

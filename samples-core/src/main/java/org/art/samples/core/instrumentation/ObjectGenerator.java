@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.instrumentation;
+package org.art.samples.core.instrumentation;
 
 import gnu.trove.set.hash.TIntHashSet;
 import org.apache.commons.io.IOUtils;

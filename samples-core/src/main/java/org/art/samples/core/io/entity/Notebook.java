@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.io.entity;
+package org.art.samples.core.io.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

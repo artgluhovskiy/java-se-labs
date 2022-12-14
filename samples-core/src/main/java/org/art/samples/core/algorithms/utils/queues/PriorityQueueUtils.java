@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.utils.queues;
+package org.art.samples.core.algorithms.utils.queues;
 
 import java.util.Arrays;
 

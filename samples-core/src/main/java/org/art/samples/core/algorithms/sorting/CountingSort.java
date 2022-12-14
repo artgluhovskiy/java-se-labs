@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.sorting;
+package org.art.samples.core.algorithms.sorting;
 
 import java.util.Arrays;
 

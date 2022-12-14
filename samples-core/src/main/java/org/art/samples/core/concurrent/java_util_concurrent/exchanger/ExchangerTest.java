@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.java_util_concurrent.exchanger;
+package org.art.samples.core.concurrent.java_util_concurrent.exchanger;
 
 import java.util.concurrent.Exchanger;
 

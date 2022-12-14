@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.interpretor;
+package org.art.samples.core.design.patterns.interpretor;
 
 /**
  * Interpreter pattern (from GoF) - code example.

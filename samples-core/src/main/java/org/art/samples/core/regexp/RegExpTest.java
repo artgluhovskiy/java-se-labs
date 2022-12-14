@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.regexp;
+package org.art.samples.core.regexp;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;

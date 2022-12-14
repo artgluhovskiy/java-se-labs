@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.java_util_concurrent.countdownlatch;
+package org.art.samples.core.concurrent.java_util_concurrent.countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
 

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.design.store_simulation;
+package org.art.samples.core.concurrent.design.store_simulation;
 
 import lombok.Data;
 import lombok.ToString;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.exceptions;
+package org.art.samples.core.exceptions;
 
 /**
  * Custom checked exception which is thrown in case of some

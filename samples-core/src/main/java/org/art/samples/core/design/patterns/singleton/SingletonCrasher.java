@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.singleton;
+package org.art.samples.core.design.patterns.singleton;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

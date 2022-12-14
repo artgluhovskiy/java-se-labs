@@ -1,10 +1,10 @@
-package main.java.org.art.samples.core.cglib.tx_manager.context;
+package org.art.samples.core.cglib.tx_manager.context;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import main.java.org.art.samples.core.cglib.tx_manager.annotations.Transactional;
+import org.art.samples.core.cglib.tx_manager.annotations.Transactional;
 
 import java.lang.reflect.Method;
 import java.util.HashSet;

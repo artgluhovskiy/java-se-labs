@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.reflection.test_runner.annotations;
+package org.art.samples.core.reflection.test_runner.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

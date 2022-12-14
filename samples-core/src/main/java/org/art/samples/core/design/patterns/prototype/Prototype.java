@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.prototype;
+package org.art.samples.core.design.patterns.prototype;
 
 /**
  * Prototype pattern (from GoF) - simple code example.

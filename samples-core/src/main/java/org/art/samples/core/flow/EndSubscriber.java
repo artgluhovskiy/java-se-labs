@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.flow;
+package org.art.samples.core.flow;
 
 import java.util.Collections;
 import java.util.LinkedList;

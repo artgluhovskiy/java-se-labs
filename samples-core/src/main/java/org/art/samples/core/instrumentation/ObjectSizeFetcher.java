@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.instrumentation;
+package org.art.samples.core.instrumentation;
 
 import java.lang.instrument.Instrumentation;
 

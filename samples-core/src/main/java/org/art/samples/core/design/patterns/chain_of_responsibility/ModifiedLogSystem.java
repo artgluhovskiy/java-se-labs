@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.chain_of_responsibility;
+package org.art.samples.core.design.patterns.chain_of_responsibility;
 
 /**
  * Chain of Responsibility pattern (from GoF) - simple code example.

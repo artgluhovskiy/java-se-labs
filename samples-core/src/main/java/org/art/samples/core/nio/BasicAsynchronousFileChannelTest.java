@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.nio;
+package org.art.samples.core.nio;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

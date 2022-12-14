@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.state;
+package org.art.samples.core.design.patterns.state;
 
 /**
  * State pattern (from GoF) - simple code examples:

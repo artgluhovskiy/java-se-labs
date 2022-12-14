@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.bridge;
+package org.art.samples.core.design.patterns.bridge;
 
 /**
  * Bridge pattern (from GoF) - code example.

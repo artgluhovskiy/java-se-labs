@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.generics;
+package org.art.samples.core.generics;
 
 /**
  * Simple mutable container which can store two objects

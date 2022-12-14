@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.leetcode;
+package org.art.samples.core.algorithms.leetcode;
 
 import lombok.extern.slf4j.Slf4j;
 import org.art.samples.core.algorithms.utils.lists.ListNode;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.oop.heroes_game.characters;
+package org.art.samples.core.oop.heroes_game.characters;
 
 public class Goblin extends CharacterBase {
 

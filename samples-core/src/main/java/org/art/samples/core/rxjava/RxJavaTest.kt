@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.rxjava
+package org.art.samples.core.rxjava
 
 import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.methodhandle;
+package org.art.samples.core.methodhandle;
 
 import java.net.URL;
 import java.util.Arrays;

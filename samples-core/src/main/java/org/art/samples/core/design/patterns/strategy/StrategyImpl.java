@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.strategy;
+package org.art.samples.core.design.patterns.strategy;
 
 /**
  * Strategy pattern (from GoF) - simple code example.

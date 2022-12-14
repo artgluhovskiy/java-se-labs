@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.generics;
+package org.art.samples.core.generics;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

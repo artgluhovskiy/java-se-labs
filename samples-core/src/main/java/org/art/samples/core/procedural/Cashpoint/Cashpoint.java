@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.procedural.Cashpoint;
+package org.art.samples.core.procedural.Cashpoint;
 
 import java.util.Scanner;
 

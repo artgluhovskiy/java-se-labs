@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.utils.lists;
+package org.art.samples.core.algorithms.utils.lists;
 
 import lombok.experimental.UtilityClass;
 

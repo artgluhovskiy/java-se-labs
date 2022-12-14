@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.groovy.dsl
+package org.art.samples.core.groovy.dsl
 
 import groovy.xml.MarkupBuilder
 

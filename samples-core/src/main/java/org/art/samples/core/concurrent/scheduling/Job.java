@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.scheduling;
+package org.art.samples.core.concurrent.scheduling;
 
 /**
  * Simple job implementation.

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.javaassist.generator;
+package org.art.samples.core.javaassist.generator;
 
 import javassist.ClassPool;
 import javassist.CtClass;

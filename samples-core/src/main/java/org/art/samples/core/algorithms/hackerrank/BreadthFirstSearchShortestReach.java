@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.hackerrank;
+package org.art.samples.core.algorithms.hackerrank;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

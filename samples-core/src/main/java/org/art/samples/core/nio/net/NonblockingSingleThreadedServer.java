@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.nio.net;
+package org.art.samples.core.nio.net;
 
 import java.nio.ByteBuffer;
 import java.nio.channels.ClosedChannelException;

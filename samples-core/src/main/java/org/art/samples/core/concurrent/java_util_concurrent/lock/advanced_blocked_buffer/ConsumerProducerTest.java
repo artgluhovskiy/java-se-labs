@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.java_util_concurrent.lock.advanced_blocked_buffer;
+package org.art.samples.core.concurrent.java_util_concurrent.lock.advanced_blocked_buffer;
 
 /**
  * Consumer/producer pattern test (with the integration of Reentrant Lock mechanism).

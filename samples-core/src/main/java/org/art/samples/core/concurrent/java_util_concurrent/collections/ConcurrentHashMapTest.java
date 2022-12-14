@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.java_util_concurrent.collections;
+package org.art.samples.core.concurrent.java_util_concurrent.collections;
 
 import java.util.HashMap;
 import java.util.Map;

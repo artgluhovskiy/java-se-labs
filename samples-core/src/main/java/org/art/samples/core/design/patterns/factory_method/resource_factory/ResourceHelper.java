@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.factory_method.resource_factory;
+package org.art.samples.core.design.patterns.factory_method.resource_factory;
 
 import static org.art.samples.core.design.patterns.factory_method.resource_factory.ResourceIF.TYPE.UNDEFINED;
 

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.mediator;
+package org.art.samples.core.design.patterns.mediator;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.json;
+package org.art.samples.core.json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

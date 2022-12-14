@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.nio.net;
+package org.art.samples.core.nio.net;
 
 public interface Server {
 

@@ -1,11 +1,11 @@
-package main.java.org.art.samples.core.algorithms.cci.graphs.trees;
+package org.art.samples.core.algorithms.cci.graphs.trees;
 
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-import main.java.org.art.samples.core.algorithms.utils.graphs.trees.BinaryTreeNode;
+import org.art.samples.core.algorithms.utils.graphs.trees.BinaryTreeNode;
 import org.junit.jupiter.api.Test;
 
 /**

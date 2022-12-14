@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.utils.graphs.trees;
+package org.art.samples.core.algorithms.utils.graphs.trees;
 
 import java.util.Objects;
 import java.util.stream.Stream;

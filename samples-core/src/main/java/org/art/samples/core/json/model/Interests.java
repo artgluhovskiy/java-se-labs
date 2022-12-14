@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.json.model;
+package org.art.samples.core.json.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

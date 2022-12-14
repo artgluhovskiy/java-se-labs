@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.flyweight;
+package org.art.samples.core.design.patterns.flyweight;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

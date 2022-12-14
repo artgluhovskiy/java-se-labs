@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.utils;
+package org.art.samples.core.algorithms.utils;
 
 import java.util.HashMap;
 import java.util.Map;

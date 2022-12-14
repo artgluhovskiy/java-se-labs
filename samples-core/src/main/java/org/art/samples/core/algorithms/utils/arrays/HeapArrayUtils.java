@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.utils.arrays;
+package org.art.samples.core.algorithms.utils.arrays;
 
 import java.util.Arrays;
 

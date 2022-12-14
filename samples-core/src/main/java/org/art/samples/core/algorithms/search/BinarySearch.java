@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.search;
+package org.art.samples.core.algorithms.search;
 
 import org.junit.jupiter.api.Test;
 

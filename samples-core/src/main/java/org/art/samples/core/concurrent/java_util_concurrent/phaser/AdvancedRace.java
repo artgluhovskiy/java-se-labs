@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.java_util_concurrent.phaser;
+package org.art.samples.core.concurrent.java_util_concurrent.phaser;
 
 import java.util.concurrent.Phaser;
 

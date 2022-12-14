@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.factory_method.resource_factory;
+package org.art.samples.core.design.patterns.factory_method.resource_factory;
 
 import java.time.LocalDateTime;
 

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.leetcode;
+package org.art.samples.core.algorithms.leetcode;
 
 import org.art.samples.core.algorithms.utils.lists.ListNode;
 import org.junit.jupiter.api.Test;

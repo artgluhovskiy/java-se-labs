@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.complitable_future.http;
+package org.art.samples.core.complitable_future.http;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.reactor.array_publisher;
+package org.art.samples.core.reactor.array_publisher;
 
 import org.junit.jupiter.api.Test;
 import org.reactivestreams.Subscriber;

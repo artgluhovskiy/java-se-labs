@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.reflection.class_analyzer;
+package org.art.samples.core.reflection.class_analyzer;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;

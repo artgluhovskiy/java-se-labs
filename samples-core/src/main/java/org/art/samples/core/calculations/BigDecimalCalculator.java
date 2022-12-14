@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.calculations;
+package org.art.samples.core.calculations;
 
 import java.math.BigDecimal;
 import java.math.MathContext;

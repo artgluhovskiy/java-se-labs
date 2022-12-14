@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.collections;
+package org.art.samples.core.collections;
 
 import java.util.EnumMap;
 import java.util.Map;

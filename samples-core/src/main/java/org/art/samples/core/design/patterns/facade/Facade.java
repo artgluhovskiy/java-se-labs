@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.facade;
+package org.art.samples.core.design.patterns.facade;
 
 /**
  * Facade pattern (from GoF) - simple code example.

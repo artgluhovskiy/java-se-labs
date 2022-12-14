@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.kotlin
+package org.art.samples.core.kotlin
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

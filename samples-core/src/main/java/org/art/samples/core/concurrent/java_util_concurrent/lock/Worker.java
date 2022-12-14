@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.java_util_concurrent.lock;
+package org.art.samples.core.concurrent.java_util_concurrent.lock;
 
 /**
  * Simple worker entity implementation.

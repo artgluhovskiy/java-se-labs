@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.geolocation;
+package org.art.samples.core.geolocation;
 
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.json;
+package org.art.samples.core.json;
 
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;

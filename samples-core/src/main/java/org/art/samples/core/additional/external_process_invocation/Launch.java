@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.additional.external_process_invocation;
+package org.art.samples.core.additional.external_process_invocation;
 
 import java.io.IOException;
 

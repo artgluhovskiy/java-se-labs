@@ -2,15 +2,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.art.java_core.annotation_processing</groupId>
     <artifactId>annotation-processor</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>annotation-processor</name>
 
     <parent>
-        <groupId>org.art.java_core</groupId>
-        <artifactId>processing</artifactId>
+        <groupId>org.art.samples</groupId>
+        <artifactId>samples-annotation-processing</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 </project>

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.design.patterns.iterator;
+package org.art.samples.core.design.patterns.iterator;
 
 import java.util.Arrays;
 

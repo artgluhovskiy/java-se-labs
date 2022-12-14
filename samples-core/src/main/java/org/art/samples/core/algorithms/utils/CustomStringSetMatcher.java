@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.algorithms.utils;
+package org.art.samples.core.algorithms.utils;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;

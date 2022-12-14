@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.concurrent.design.blocked_buffer;
+package org.art.samples.core.concurrent.design.blocked_buffer;
 
 /**
  * Consumer/producer pattern test.

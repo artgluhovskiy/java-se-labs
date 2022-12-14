@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.stream_api.entity;
+package org.art.samples.core.stream_api.entity;
 
 import lombok.*;
 

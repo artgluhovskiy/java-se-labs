@@ -1,8 +1,8 @@
-package main.java.org.art.samples.core.cglib.tx_manager.services;
+package org.art.samples.core.cglib.tx_manager.services;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import main.java.org.art.samples.core.cglib.tx_manager.annotations.Transactional;
+import org.art.samples.core.cglib.tx_manager.annotations.Transactional;
 import org.art.samples.core.cglib.tx_manager.model.User;
 
 import java.util.*;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.processing;
+package org.art.samples.processor;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.complitable_future.http;
+package org.art.samples.core.complitable_future.http;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;

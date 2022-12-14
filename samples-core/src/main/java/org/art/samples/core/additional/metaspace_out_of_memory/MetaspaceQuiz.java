@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.additional.metaspace_out_of_memory;
+package org.art.samples.core.additional.metaspace_out_of_memory;
 
 import java.io.IOException;
 

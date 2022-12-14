@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.xlsx;
+package org.art.samples.core.xlsx;
 
 import com.google.gson.GsonBuilder;
 

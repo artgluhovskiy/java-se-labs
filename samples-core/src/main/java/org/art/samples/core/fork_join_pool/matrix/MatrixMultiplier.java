@@ -1,4 +1,4 @@
-package main.java.org.art.samples.core.fork_join_pool.matrix;
+package org.art.samples.core.fork_join_pool.matrix;
 
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
