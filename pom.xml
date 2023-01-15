@@ -27,7 +27,7 @@
         <junit-jupiter-engine.version>5.2.0</junit-jupiter-engine.version>
         <javassist.version>3.24.0-GA</javassist.version>
         <cglib.version>3.2.8</cglib.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <commons-lang3.version>3.7</commons-lang3.version>
         <trove4j.version>3.0.3</trove4j.version>
         <ftpserver-core.version>1.1.1</ftpserver-core.version>
