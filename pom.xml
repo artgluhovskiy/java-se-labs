@@ -33,7 +33,7 @@
         <ftpserver-core.version>1.1.1</ftpserver-core.version>
         <poi.version>3.17</poi.version>
         <geoip2.version>2.13.1</geoip2.version>
-        <logback-classic.version>1.1.7</logback-classic.version>
+        <logback-classic.version>1.2.0</logback-classic.version>
         <reactive-streams-tck.version>1.0.4</reactive-streams-tck.version>
         <reactor-test.version>3.4.24</reactor-test.version>
         <rxjava.version>2.2.9</rxjava.version>
