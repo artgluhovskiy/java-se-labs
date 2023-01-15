@@ -12,6 +12,7 @@
         <module>samples-core</module>
         <module>samples-annotation-processing</module>
         <module>samples-jcstress</module>
+        <module>samples-jmh</module>
     </modules>
 
     <properties>
