@@ -40,7 +40,7 @@
         <async-http-client.version>1.9.40</async-http-client.version>
         <gson.version>2.10</gson.version>
         <guava.version>24.0-jre</guava.version>
-        <jsoup.version>1.11.2</jsoup.version>
+        <jsoup.version>1.15.3</jsoup.version>
         <log4j-core.version>2.10.0</log4j-core.version>
         <lombok.version>1.18.2</lombok.version>
     </properties>
