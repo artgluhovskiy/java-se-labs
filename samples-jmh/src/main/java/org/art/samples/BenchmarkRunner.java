@@ -2,6 +2,7 @@ package org.art.samples;
 
 import lombok.SneakyThrows;
 import org.art.samples.reflection.ReflectiveAnnotationAccessBenchmark;
+import org.art.samples.reflection.ReflectiveFieldsAccessBenchmark;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
@@ -11,7 +12,8 @@ public class BenchmarkRunner {
     public static void main(String[] args) {
         var opt = new OptionsBuilder()
 //            .include(VarHandleBenchmark.class.getSimpleName())
-            .include(ReflectiveAnnotationAccessBenchmark.class.getSimpleName())
+//            .include(ReflectiveAnnotationAccessBenchmark.class.getSimpleName())
+            .include(ReflectiveFieldsAccessBenchmark.class.getSimpleName())
             .build();
 
         new Runner(opt).run();
