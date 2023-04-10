@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Print the directories, which don't contain forbidden subdirectory or .ignore file
+# ./script.sh ./data
 
 HIGHLIGHT='\033[0;31m'
 NORMAL='\033[0m'
