@@ -219,6 +219,13 @@
             <artifactId>javassist</artifactId>
         </dependency>
 
+        <!-- MISC -->
+
+        <dependency>
+            <groupId>org.parboiled</groupId>
+            <artifactId>parboiled-java</artifactId>
+        </dependency>
+
         <!-- TDD -->
 
         <dependency>
