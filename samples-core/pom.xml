@@ -226,6 +226,11 @@
             <artifactId>parboiled-java</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.jgrapht</groupId>
+            <artifactId>jgrapht-core</artifactId>
+        </dependency>
+
         <!-- TDD -->
 
         <dependency>

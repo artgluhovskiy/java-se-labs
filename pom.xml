@@ -46,6 +46,7 @@
         <blockhound.version>1.0.8.RELEASE</blockhound.version>
         <slf4j-api.version>2.0.7</slf4j-api.version>
         <parboiled-java.version>1.4.1</parboiled-java.version>
+        <jgrapht-core.version>1.0.1</jgrapht-core.version>
     </properties>
 
     <build>
@@ -291,6 +292,12 @@
                 <groupId>org.parboiled</groupId>
                 <artifactId>parboiled-java</artifactId>
                 <version>${parboiled-java.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jgrapht</groupId>
+                <artifactId>jgrapht-core</artifactId>
+                <version>${jgrapht-core.version}</version>
             </dependency>
 
             <!-- TDD -->
